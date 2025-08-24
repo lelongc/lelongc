@@ -84,3 +84,14 @@ As a DevOps Engineer, I specialize in streamlining development cycles and ensuri
 </p>
 
 ---
+
+## 📚 My Knowledge Repositories & Projects
+
+Here are some of the repos I'm proud of. My notes are deployed as static sites for easy reading.
+
+| Category | Repository / Link | Description |
+|---|---|---|
+| 🧠 **Knowledge Base** | **[AWS Knowledge Base](https://lelongc.github.io/aws)** | My notes for AWS. |
+| 🧠 **Knowledge Base** | **[DevOps Handbook](https://lelongc.github.io/devops)** | A collection of guides on my DevOps learning journey. |
+| 🛠️ **Project** | **[E-commerce Platform](https://github.com/lelongc/project-a)** | A full-stack MERN e-commerce website with advanced features. |
+| 🛠️ **Project** | **[Cloud Cleanup Tool](https://github.com/lelongc/project-b)** | A Python script to automate cloud resource cleanup. |
