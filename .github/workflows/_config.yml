@@ -1,0 +1,10 @@
+# --- CHỌN MỘT TRONG CÁC THEME DƯỚI ĐÂY ---
+# theme: jekyll-theme-minimal
+# theme: jekyll-theme-cayman
+# theme: jekyll-theme-slate
+# theme: jekyll-theme-architect
+theme: jekyll-theme-hacker  # Đây là một theme giao diện tối, rất hợp với dân lập trình
+
+# --- THÔNG TIN TRANG WEB ---
+title: Le Long C's Tech Portfolio
+description: A collection of my knowledge, projects, and journey in Backend & DevOps.
