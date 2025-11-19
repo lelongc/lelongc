@@ -27,6 +27,8 @@ As a DevOps Engineer, I specialize in streamlining development cycles and ensuri
 ## 🛠️ My Key Skills & Technologies
 
 <div align="center">
+  <img width="80" height="40" alt="image" src="https://github.com/user-attachments/assets/c76c34c5-94de-4a26-98f2-0453131938fe" />
+
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo" style="margin: 0 5px;" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-line-wordmark.svg" height="40" alt="amazonwebservices logo" style="margin: 0 5px;" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="40" alt="docker logo" style="margin: 0 5px;" />
