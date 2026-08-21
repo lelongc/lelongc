@@ -1,7 +1,37 @@
- https://dongvanfb.net/read_mail_box/
+Title: [FOR HIRE] AI-First Builder (Web, Bots, Automation) | Flexible Hours | 1-Week Free Trial | $500-$1500/mo
 
-s7lrwpliwc
+Body:
 
-RoPxlH!Rv%udM5
+Hi everyone,
 
-bentildugomg@hotmail.com|SamePassABC123|M.C560_BL2.0.U.-ClzZ6gW8sMDGGXX1s2Wygri0cy2HZ5wZk!GKAYeVKJSth7sywGxKP4hXNKOVpyEKtLE*dS9OVH2MszDkjxZ5nwM0QSOSWlhTrNIr2hbUG4qkZkahb!vvGbf0dyKZphEzDVcqjDhrhmnn0hAtTUow8GGIIjCZH8LSz0!5Z101zNlgBmmcVmhSH9OLVxhYHB7uqK!6g9RLIQClzs!eyAz23IptDdFurA4bDFZf92xC7onymn5c92mDIlKD72sb0BWK8AFohzs5FOA8049fbxnJixuXRg8SYuPDAHo5MII3kjduPAFQ0kQl8UAl6aQlelbqUFCuhbuoZn5Lp7z6cRaWyDw8xasil7C6zTgaKM3FLCx6oh98d6BD8fYcy83MWzADOg$$|9e5f94bc-e8a4-4e73-b8be-63364c29d753
+I am looking for a long-term role with a remote startup. I care about getting the work done, not clocking in from 9-to-5. I strongly prefer flexible working hours—as long as I deliver the tasks you assign, I hope my schedule can be flexible.
+
+Let me be completely honest about my skills:
+I am an "AI-First" builder. I don't write code by hand from memory anymore, and I've honestly forgotten a lot of the deep theory. Instead, I heavily rely on AI to write code, debug, and deploy. I might not pass a traditional whiteboard coding interview, but I know how to connect the dots, use AI effectively, and actually ship working products.
+
+Also, my spoken English is basic. I can communicate for daily work, but I need tasks to be assigned via text. Reading the requirements carefully helps me understand 100% of the task and guarantees I deliver exactly what you want.
+
+What I have built recently:
+
+English Learning Website: Built with AI integration and deployed using Serverless architecture on AWS.
+
+Chrome Extension (Clipboard Manager): A browser tool that automatically saves copied text/images directly to a personal Google Drive, with auto-delete and grouping features.
+
+AI Video Generator: A tool that takes images/GIFs and turns them into a video with auto-subtitles and cloned AI voiceovers.
+
+Telegram Bot: Currently working on a group management bot.
+
+Misc Skills: I know my way around Docker, Linux, and AWS setup. I also tinker with laptop virtualization and super basic Blender (low-poly models & texturing).
+
+The Offer: 1-Week Free Trial
+I know hiring someone new is a risk, especially with an AI-heavy workflow like mine. So, here is my deal: Give me a task, and I will work for you for 1 week for free. If I can deliver the results you want, we can make it official for the long term.
+
+Expected Rate: $500 - $1,500 / month, depending on the workload.
+
+If you just need a practical guy who gets things done, let's talk.
+
+How to reach me:
+
+Send me a DM here on Reddit.
+
+Email: worklelong@gmail.com
