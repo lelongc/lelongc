@@ -19,7 +19,7 @@ Chrome Extension (Clipboard Manager): A browser tool that automatically saves co
 
 AI Video Generator: A tool that takes images/GIFs and turns them into a video with auto-subtitles and cloned AI voiceovers.
 
-Telegram Bot: Currently working on a group management bot.
+Telegram Bot: A parental control and screen-time management bot (remote usage limits, blocking/allowing access, and schedule controls).
 
 Misc Skills: I know my way around Docker, Linux, and AWS setup. I also tinker with laptop virtualization and super basic Blender (low-poly models & texturing).
 
