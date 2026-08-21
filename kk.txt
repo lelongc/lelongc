@@ -4,7 +4,7 @@ Body:
 
 Hi everyone,
 
-I am looking for a long-term role with a remote startup. I care about getting the work done, not clocking in from 9-to-5. I strongly prefer flexible working hours—as long as I deliver the tasks you assign, I hope my schedule can be flexible.
+I am looking for a long-term role with a remote startup. I care about getting the work done and delivering high quality results. I prefer flexible working hours—as long as I deliver the tasks you assign on time, I am fully committed to the team's success.
 
 Let me be completely honest about my skills:
 I am an "AI-First" builder. I don't write code by hand from memory anymore, and I've honestly forgotten a lot of the deep theory. Instead, I heavily rely on AI to write code, debug, and deploy. I might not pass a traditional whiteboard coding interview, but I know how to connect the dots, use AI effectively, and actually ship working products.
