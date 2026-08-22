@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Thanh Long - AI Automation & Full-Stack Engineer Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --text-dark: #0f172a;
+            --text-body: #1e293b;
+            --text-muted: #475569;
+            --accent-blue: #1d4ed8;
+            --border-line: #cbd5e1;
+            --bg-page: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            color: var(--text-body);
+            background-color: #f1f5f9;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* 1-Column ATS Printable Container */
+        .page-container {
+            max-width: 820px;
+            margin: 24px auto;
+            background: var(--bg-page);
+            padding: 44px 50px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+            border-radius: 6px;
+        }
+
+        /* Top Header - Single Column Flow */
+        .header {
+            border-bottom: 2px solid var(--text-dark);
+            padding-bottom: 14px;
+            margin-bottom: 18px;
+            text-align: left;
+        }
+
+        .header h1 {
+            font-size: 2.1rem;
+            font-weight: 800;
+            color: var(--text-dark);
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+            margin-bottom: 4px;
+        }
+
+        .header .headline {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--accent-blue);
+            margin-bottom: 8px;
+        }
+
+        .contact-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px 14px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .contact-row span {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .contact-row a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-row a:hover {
+            color: var(--accent-blue);
+            text-decoration: underline;
+        }
+
+        /* Standard ATS Section Headings */
+        .section {
+            margin-bottom: 18px;
+        }
+
+        .section-title {
+            font-size: 0.92rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.07em;
+            color: var(--text-dark);
+            border-bottom: 1px solid var(--border-line);
+            padding-bottom: 3px;
+            margin-bottom: 10px;
+        }
+
+        .summary-text {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: var(--text-body);
+        }
+
+        /* 1-Column Skills List (Max ATS Score) */
+        .skills-list {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+            font-size: 0.88rem;
+        }
+
+        .skill-item strong {
+            color: var(--text-dark);
+            font-weight: 700;
+            display: inline;
+        }
+
+        .skill-item span {
+            color: var(--text-body);
+        }
+
+        /* Projects Section */
+        .project-block {
+            margin-bottom: 14px;
+        }
+
+        .project-block:last-child {
+            margin-bottom: 0;
+        }
+
+        .project-title-line {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 3px;
+        }
+
+        .project-name {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        .project-stack {
+            font-size: 0.8rem;
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--accent-blue);
+            font-weight: 600;
+        }
+
+        .project-summary {
+            font-size: 0.88rem;
+            color: var(--text-body);
+            line-height: 1.45;
+            margin-bottom: 4px;
+        }
+
+        .bullet-list {
+            list-style: disc inside;
+            padding-left: 4px;
+        }
+
+        .bullet-list li {
+            font-size: 0.85rem;
+            color: var(--text-body);
+            line-height: 1.45;
+            margin-bottom: 2px;
+        }
+
+        .live-link {
+            font-size: 0.8rem;
+            color: var(--accent-blue);
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 2px;
+            display: inline-block;
+        }
+
+        .live-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Terms / Availability Box */
+        .terms-block {
+            font-size: 0.86rem;
+            line-height: 1.55;
+            color: var(--text-body);
+            background: #f8fafc;
+            border-left: 3px solid var(--accent-blue);
+            padding: 8px 12px;
+            border-radius: 2px;
+        }
+
+        .terms-block strong {
+            color: var(--text-dark);
+        }
+
+        /* Floating Print Button */
+        .print-btn-wrap {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 100;
+        }
+
+        .btn-print {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: #0f172a;
+            color: #ffffff;
+            padding: 11px 18px;
+            border-radius: 24px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+            transition: all 0.15s ease;
+        }
+
+        .btn-print:hover {
+            background: var(--accent-blue);
+            transform: translateY(-2px);
+        }
+
+        /* Print Media Styles (A4 Page Fit) */
+        @media print {
+            body {
+                background: #ffffff;
+                color: #000000;
+            }
+
+            .print-btn-wrap {
+                display: none !important;
+            }
+
+            .page-container {
+                max-width: 100%;
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+                border-radius: 0;
+            }
+
+            .header {
+                border-bottom: 2px solid #000000;
+            }
+
+            .section-title {
+                border-bottom: 1px solid #000000;
+            }
+
+            .project-stack, .live-link {
+                color: #000000;
+            }
+
+            .terms-block {
+                border-left-color: #000000;
+                background: none;
+                padding: 4px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="print-btn-wrap">
+        <button class="btn-print" onclick="window.print()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V2h12v7"></path><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect width="12" height="8" x="6" y="14"></rect></svg>
+            Print / Save as PDF
+        </button>
+    </div>
+
+    <div class="page-container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Le Thanh Long</h1>
+            <div class="headline">AI Automation &amp; Full-Stack Software Engineer</div>
+            <div class="contact-row">
+                <span>📍 Vietnam (GMT+7) • Remote APAC &amp; Worldwide</span>
+                <span>• 📧 <a href="mailto:worklelong@gmail.com">worklelong@gmail.com</a></span>
+                <span>• 🌐 Portfolio: <a href="https://lelongc.vercel.app/" target="_blank">https://lelongc.vercel.app/</a></span>
+                <span>• 💼 LinkedIn: <a href="https://www.linkedin.com/in/long-lê-190l" target="_blank">linkedin.com/in/long-lê-190l</a></span>
+            </div>
+        </header>
+
+        <!-- Professional Summary -->
+        <section class="section">
+            <h2 class="section-title">Professional Summary</h2>
+            <p class="summary-text">
+                Results-focused <strong>AI-First Full-Stack &amp; Automation Engineer</strong> with hands-on experience building, testing, and deploying production-ready applications, intelligent messaging bots, browser tools, and cloud automation pipelines. Proven ability to orchestrate modern AI development environments (Claude, Gemini, OpenAI, Antigravity) to rapidly translate complex business requirements into high-quality, maintainable software. Strong background in API integrations, webhooks, asynchronous collaboration, and autonomous execution.
+            </p>
+        </section>
+
+        <!-- Technical Skills (Keyword Optimized for ATS / AI Parsers) -->
+        <section class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-list">
+                <div class="skill-item">
+                    <strong>AI &amp; Automation:</strong> 
+                    <span>LLM APIs (Anthropic Claude, OpenAI, Google Gemini), AI Agents, Prompt Engineering, Workflow Automation (n8n, Make concepts), Telegram Bot API, AI Voice Synthesis (TTS), Video &amp; FFmpeg Automation.</span>
+                </div>
+                <div class="skill-item">
+                    <strong>Backend &amp; Cloud Infrastructure:</strong> 
+                    <span>Python, Node.js, REST APIs, Webhooks, AWS Serverless (AWS Lambda, S3), Docker Containers, Linux VPS Administration, Cloudflare, Databases &amp; JSON Storage.</span>
+                </div>
+                <div class="skill-item">
+                    <strong>Frontend &amp; Browser Tools:</strong> 
+                    <span>Modern JavaScript (ES6+), React, HTML5, CSS3, Chrome Extensions Development (Manifest V3), Google Workspace APIs (OAuth2, Google Drive API).</span>
+                </div>
+                <div class="skill-item">
+                    <strong>Development Methodologies:</strong> 
+                    <span>Rapid Prototyping, Vibe Coding, AI-Assisted Debugging, Text-Driven Async Communication (Slack, Discord, Notion, Jira), Technical On-Page SEO.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Projects & Practical Experience -->
+        <section class="section">
+            <h2 class="section-title">Featured Projects &amp; Implementation Experience</h2>
+
+            <!-- Project 1 -->
+            <div class="project-block">
+                <div class="project-title-line">
+                    <span class="project-name">1. AI Desktop Activity &amp; Screen-Time Management Telegram Bot</span>
+                    <span class="project-stack">Python • Telegram Bot API • LLM Synthesis • Webhooks</span>
+                </div>
+                <p class="project-summary">
+                    Engineered an end-to-end device supervision and automation bot for remote family management.
+                </p>
+                <ul class="bullet-list">
+                    <li>Developed a lightweight client-side tracking script collecting application session and screen-time telemetry.</li>
+                    <li>Integrated LLM API prompts to parse raw logs and synthesize structured, human-readable daily analytical reports.</li>
+                    <li>Built bidirectional Telegram Bot commands allowing parents to enforce real-time usage limits and schedule curfews remotely.</li>
+                </ul>
+                <a href="https://youtu.be/W-V62e_SCfU" target="_blank" class="live-link">▶ Live Video Demo: https://youtu.be/W-V62e_SCfU</a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-block">
+                <div class="project-title-line">
+                    <span class="project-name">2. AI English Learning Web Platform</span>
+                    <span class="project-stack">React • AWS Serverless (Lambda, S3) • AI Conversational API</span>
+                </div>
+                <p class="project-summary">
+                    Designed and deployed a full-stack interactive language learning web application with integrated AI conversational practice.
+                </p>
+                <ul class="bullet-list">
+                    <li>Constructed an AWS Serverless architecture (S3 static hosting + Lambda API backend) for instant scalability and low operational cost.</li>
+                    <li>Implemented AI-driven real-time prompt feedback for grammar analysis and conversational simulation.</li>
+                </ul>
+                <a href="https://youtu.be/vs-aYg48qak" target="_blank" class="live-link">▶ Live Video Demo: https://youtu.be/vs-aYg48qak</a>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-block">
+                <div class="project-title-line">
+                    <span class="project-name">3. Smart Clipboard Manager (Chrome Extension)</span>
+                    <span class="project-stack">Chrome Extension MV3 • Google Drive API • OAuth2 • JavaScript</span>
+                </div>
+                <p class="project-summary">
+                    Created a browser productivity tool that automatically captures copied text/images and backs them up to personal cloud storage.
+                </p>
+                <ul class="bullet-list">
+                    <li>Configured client-side OAuth2 authentication and automated syncing to Google Drive API.</li>
+                    <li>Built local storage filtering, custom categorization, and automated data cleanup routines.</li>
+                </ul>
+                <a href="https://youtu.be/a9OFoOEBLYU" target="_blank" class="live-link">▶ Live Video Demo: https://youtu.be/a9OFoOEBLYU</a>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-block">
+                <div class="project-title-line">
+                    <span class="project-name">4. AI Automated Short-Form Video Generator</span>
+                    <span class="project-stack">Python • AI Voice Cloning • Dynamic Subtitles • FFmpeg</span>
+                </div>
+                <p class="project-summary">
+                    Built a media processing pipeline converting images, GIFs, and scripts into complete short videos with dynamic subtitles and cloned AI voiceovers.
+                </p>
+                <a href="https://youtu.be/15ddagA2z2k" target="_blank" class="live-link">▶ Live Video Demo: https://youtu.be/15ddagA2z2k</a>
+            </div>
+        </section>
+
+        <!-- Availability & Terms -->
+        <section class="section">
+            <h2 class="section-title">Availability &amp; Work Terms</h2>
+            <div class="terms-block">
+                <strong>• Work Model:</strong> 100% Remote, Contract / Freelance / Ongoing Roles (20–35+ hours/week). Active window: 7:00 AM – 11:00 PM (GMT+7).<br>
+                <strong>• Communication:</strong> Async-first with prompt response on Slack, Discord, Email, or Jira.<br>
+                <strong>• Trial Engagement:</strong> Open to a 1-week test task to demonstrate rapid execution speed, code quality, and integration capability.
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>

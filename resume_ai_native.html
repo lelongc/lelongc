@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Thanh Long - AI-Native Software Developer CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4338ca;
+            --primary-light: #6366f1;
+            --accent-cyan: #0284c7;
+            --text-dark: #0f172a;
+            --text-body: #334155;
+            --text-muted: #64748b;
+            --bg-page: #ffffff;
+            --bg-subtle: #f8fafc;
+            --border: #e2e8f0;
+            --border-dark: #cbd5e1;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: var(--text-body);
+            background-color: #e2e8f0;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Printable Container */
+        .page-container {
+            max-width: 840px;
+            margin: 24px auto;
+            background: var(--bg-page);
+            padding: 44px 48px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 6px;
+        }
+
+        /* Top Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 2px solid var(--text-dark);
+            padding-bottom: 16px;
+            margin-bottom: 18px;
+        }
+
+        .name {
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: var(--text-dark);
+            letter-spacing: -0.04em;
+            line-height: 1.1;
+        }
+
+        .title-badge {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--primary-light);
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .contact-info {
+            text-align: right;
+            font-size: 0.84rem;
+            color: var(--text-muted);
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+        }
+
+        .contact-info a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-info a:hover {
+            color: var(--primary-light);
+            text-decoration: underline;
+        }
+
+        /* Section Headings */
+        .section {
+            margin-bottom: 18px;
+        }
+
+        .section-header {
+            font-size: 0.92rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--text-dark);
+            border-bottom: 1px solid var(--border-dark);
+            padding-bottom: 4px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* Core Summary */
+        .summary-box {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: var(--text-body);
+        }
+
+        /* Skills Matrix */
+        .skills-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+            font-size: 0.88rem;
+        }
+
+        .skill-row {
+            display: flex;
+            gap: 8px;
+        }
+
+        .skill-label {
+            font-weight: 700;
+            color: var(--text-dark);
+            min-width: 175px;
+            flex-shrink: 0;
+        }
+
+        .skill-values {
+            color: var(--text-body);
+        }
+
+        /* Projects Section */
+        .project-card {
+            margin-bottom: 15px;
+            padding-bottom: 12px;
+            border-bottom: 1px dashed var(--border);
+        }
+
+        .project-card:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .project-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 4px;
+        }
+
+        .project-title {
+            font-size: 0.95rem;
+            font-weight: 800;
+            color: var(--text-dark);
+        }
+
+        .project-tech {
+            font-size: 0.78rem;
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .project-desc {
+            font-size: 0.88rem;
+            color: var(--text-body);
+            line-height: 1.45;
+            margin-bottom: 4px;
+        }
+
+        .project-bullets {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .project-bullets li {
+            position: relative;
+            padding-left: 14px;
+            font-size: 0.84rem;
+            color: var(--text-body);
+            line-height: 1.45;
+            margin-bottom: 2px;
+        }
+
+        .project-bullets li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: var(--primary-light);
+            font-weight: bold;
+        }
+
+        .project-link {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--accent-cyan);
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 3px;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Workstyle & Terms */
+        .terms-grid {
+            background: var(--bg-subtle);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 10px 14px;
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+
+        .terms-grid strong {
+            color: var(--text-dark);
+        }
+
+        /* Floating Print Button */
+        .print-btn-wrap {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 100;
+        }
+
+        .btn-print {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: #0f172a;
+            color: #ffffff;
+            padding: 12px 20px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+            transition: all 0.15s ease;
+        }
+
+        .btn-print:hover {
+            background: var(--primary-light);
+            transform: translateY(-2px);
+        }
+
+        /* Print Media Styles */
+        @media print {
+            body {
+                background: #ffffff;
+                color: #000000;
+            }
+
+            .print-btn-wrap {
+                display: none !important;
+            }
+
+            .page-container {
+                max-width: 100%;
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+                border-radius: 0;
+            }
+
+            .header {
+                border-bottom: 2px solid #000000;
+            }
+
+            .section-header {
+                border-bottom: 1px solid #000000;
+            }
+
+            .project-tech, .project-link {
+                color: #000000;
+            }
+
+            .terms-grid {
+                background: none;
+                border: 1px solid #000000;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="print-btn-wrap">
+        <button class="btn-print" onclick="window.print()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V2h12v7"></path><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect width="12" height="8" x="6" y="14"></rect></svg>
+            Print / Save as PDF (Ctrl + P)
+        </button>
+    </div>
+
+    <div class="page-container">
+        <!-- Header -->
+        <header class="header">
+            <div>
+                <h1 class="name">Le Thanh Long</h1>
+                <div class="title-badge">AI-Native Software Developer &amp; Full-Stack Builder</div>
+            </div>
+            <div class="contact-info">
+                <div>📍 Vietnam (GMT+7) • 100% Remote Global</div>
+                <div>📧 <a href="mailto:worklelong@gmail.com">worklelong@gmail.com</a></div>
+                <div>🌐 Portfolio: <a href="https://lelongc.vercel.app/" target="_blank">lelongc.vercel.app</a></div>
+                <div>💼 LinkedIn: <a href="https://www.linkedin.com/in/long-lê-190l" target="_blank">linkedin.com/in/long-lê-190l</a></div>
+            </div>
+        </header>
+
+        <!-- Professional Summary -->
+        <section class="section">
+            <h2 class="section-header">Executive Summary</h2>
+            <div class="summary-box">
+                Autonomous <strong>AI-Native Full-Stack Developer</strong> specializing in taking software projects end-to-end from specification to production deployment. Deep expertise in orchestrating AI as a complete engineering system (Claude, Gemini, Antigravity IDE) for rapid architecture scaffolding, multi-file code generation, automated testing, and zero-downtime deployments. Committed to shipping reliable, high-performance web applications, browser extensions, messaging bots, and cloud workflows.
+            </div>
+        </section>
+
+        <!-- Technical Skills -->
+        <section class="section">
+            <h2 class="section-header">Technical Competencies</h2>
+            <div class="skills-grid">
+                <div class="skill-row">
+                    <span class="skill-label">AI Systems &amp; Workflow:</span>
+                    <span class="skill-values">Claude 3.5 Sonnet, Google Antigravity, OpenAI APIs, Prompt Orchestration, AI Agents, Automated Unit Test Generation.</span>
+                </div>
+                <div class="skill-row">
+                    <span class="skill-label">Frontend &amp; Browser:</span>
+                    <span class="skill-values">Modern JavaScript (ES6+), React, HTML5, CSS3, Chrome Extensions Development (Manifest V3), UI/UX Prototyping.</span>
+                </div>
+                <div class="skill-row">
+                    <span class="skill-label">Backend &amp; Cloud Infra:</span>
+                    <span class="skill-values">Python, Node.js, RESTful APIs, Webhooks, AWS Serverless (Lambda, S3), Docker Containers, Linux Administration, Cloudflare.</span>
+                </div>
+                <div class="skill-row">
+                    <span class="skill-label">APIs &amp; Automations:</span>
+                    <span class="skill-values">Telegram Bot API, Google Workspace &amp; Drive APIs (OAuth2), Media Automation (FFmpeg, Voice Synthesis/TTS).</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Production Projects & Implementations -->
+        <section class="section">
+            <h2 class="section-header">Featured End-to-End Projects</h2>
+
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-top">
+                    <span class="project-title">1. AI English Learning Web Application</span>
+                    <span class="project-tech">React • AWS Serverless • AI API • Cloud Architecture</span>
+                </div>
+                <p class="project-desc">
+                    An interactive language learning platform providing real-time AI-powered conversational simulations and dynamic grammar analysis.
+                </p>
+                <ul class="project-bullets">
+                    <li>Constructed a full serverless pipeline on AWS (S3 static hosting + Lambda API backend) for instant global scaling and zero idle maintenance cost.</li>
+                    <li>Integrated real-time prompt-driven evaluation loops for conversational roleplay and instant linguistic feedback.</li>
+                </ul>
+                <a href="https://youtu.be/vs-aYg48qak" target="_blank" class="project-link">▶ Watch Video Walkthrough (YouTube)</a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-top">
+                    <span class="project-title">2. Smart Clipboard Manager (Chrome Extension)</span>
+                    <span class="project-tech">Chrome Extension MV3 • Google Drive API • OAuth2 • JavaScript</span>
+                </div>
+                <p class="project-desc">
+                    A productivity browser tool that automatically captures copied text and image data, syncing them directly to personal Google Drive storage.
+                </p>
+                <ul class="project-bullets">
+                    <li>Engineered secure client-side OAuth2 authentication and automated file synchronization with Google Drive REST APIs.</li>
+                    <li>Implemented custom data categorization, search indexing, and user-configurable automated cleanup policies.</li>
+                </ul>
+                <a href="https://youtu.be/a9OFoOEBLYU" target="_blank" class="project-link">▶ Watch Video Walkthrough (YouTube)</a>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-top">
+                    <span class="project-title">3. AI Desktop Activity &amp; Screen-Time Telegram Bot</span>
+                    <span class="project-tech">Python • Telegram Bot API • LLM Synthesis • Webhooks</span>
+                </div>
+                <p class="project-desc">
+                    A remote parental supervision and device management bot with automated AI telemetry analysis.
+                </p>
+                <ul class="project-bullets">
+                    <li>Built a lightweight local client tracking agent collecting application session and screen-time telemetry.</li>
+                    <li>Integrated LLM prompts to synthesize daily activity logs into concise analytical reports delivered via Telegram.</li>
+                    <li>Implemented bidirectional remote commands for instant access toggles and curfew enforcement.</li>
+                </ul>
+                <a href="https://youtu.be/W-V62e_SCfU" target="_blank" class="project-link">▶ Watch Video Walkthrough (YouTube)</a>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card">
+                <div class="project-top">
+                    <span class="project-title">4. Automated AI Short-Form Video Generator</span>
+                    <span class="project-tech">Python • AI Voice Cloning • Subtitle Sync • FFmpeg</span>
+                </div>
+                <p class="project-desc">
+                    An end-to-end media automation pipeline that converts static images, GIFs, and scripts into complete short videos with dynamic subtitles and cloned AI voiceovers.
+                </p>
+                <a href="https://youtu.be/15ddagA2z2k" target="_blank" class="project-link">▶ Watch Video Walkthrough (YouTube)</a>
+            </div>
+        </section>
+
+        <!-- Availability & Terms -->
+        <section class="section">
+            <h2 class="section-header">Work Terms &amp; Availability</h2>
+            <div class="terms-grid">
+                <strong>• Work Availability:</strong> 20–35+ hours/week (flexible schedule between 2 to 10 hours/day). Active window: 7:00 AM – 11:00 PM (GMT+7).<br>
+                <strong>• Collaboration:</strong> 100% remote, async-first with rapid communication via Slack, Discord, Email, or Jira.<br>
+                <strong>• Compensation Expectation:</strong> €800 – €1,000 / month ($500 – $1,000 USD / month).<br>
+                <strong>• Trial Task:</strong> Ready to complete a 1-week test task immediately to demonstrate execution speed and code quality.
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
